@@ -51,7 +51,7 @@ https://github.com/kermtech6/KERM-X-SILENT-MD
   
 ----
 
-![Image](https://github.com/user-attachments/assets/d406a295-1b68-407a-9d0d-7c55b4be8d7d)
+![Image](https://raw.githubusercontent.com/kermtech6/logo/refs/heads/main/56C67450-A2D2-468E-B0CB-A76D4D48AE37.png)
 
 ----
 
