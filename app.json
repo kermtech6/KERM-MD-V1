@@ -1,12 +1,12 @@
 {
-  "name": "DARK-SILENCE-MD",
-  "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY SILENTLOVER432♥️",
-  "logo": "https://telegra.ph/file/2a06381b260c3f096a612.jpg",
-  "keywords": ["bot"],
+  "bot-name": "KERM-MD",
+  "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY LORD KERM♥️",
+  "logo": "https://files.catbox.moe/s1kz4t.jpg",
+  "keywords": ["KERM","bot"],
   "success_url": "/",
   "env": {
     "SESSION_ID": {
-      "description": "Put the session-id here.",
+      "description": "Put the session-id here. Starting with KERM-MD~",
       "required": true,
       "value": ""
     },  
@@ -14,14 +14,14 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": true,
-      "value": "https://telegra.ph/file/2a06381b260c3f096a612.jpg"
+      "value": "https://files.catbox.moe/s1kz4t.jpg"
       
     }, 
     
     "ALIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": true,
-      "value": "ℍ𝕀𝕀 𝔻𝔼𝔸ℝ 𝕌𝕊𝔼ℝ 𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 𝔸𝕃𝕀𝕍𝔼 ℕ𝕆𝕎 ℙ𝕆𝕎𝔼ℝ𝔼𝔻 𝔹𝕐 𝕊𝕀𝕃𝔼ℕ𝕋𝕃𝕆𝕍𝔼ℝ 🤍💫💨"
+      "value": "HI DEAR USER KERM-MD ALIVE NOW POWERED BY LORD KERM 🤍💫💨"
     
     },
     
@@ -42,13 +42,13 @@
     "AUTO_VOICE": {
       "description": "Make it true if you want bot auto voice.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_REPLY": {
       "description": "Make it true if you want bot auto reply.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_STICKER": {
@@ -66,13 +66,13 @@
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
-      "value": "true"
+      "value": "false"
     },
 
     "ANTI_BAD": {
       "description": "Make it true if you want bot auto delete bad words from group example xxx porn etc.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "ANTI_DEL_PATH": {
@@ -90,13 +90,13 @@
     "AUTO_REACT": {
       "description": "Make it true if you want bot AutoReact.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "BOT_NAME": {
       "description": "write hear your name.",
       "required": true,
-      "value": "✦𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃✦"
+      "value": "✭𝙺𝙴𝚁𝙼 𝙼𝙳✭"
     }, 
 
     "HEART_REACT": {
@@ -114,13 +114,13 @@
     "CAPTION": {
       "description": "enter your caption if you want to show on menu.",
       "required": true,
-      "value": "𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐒𝐈𝐋𝐄𝐍𝐓•𝐋𝐎𝐕𝐄𝐑432🤍💨"
+      "value": "POWERED BY TECH•KERM🤍💨"
     }, 
     
     "STATUS_REPLY": {
       "description": "enter your caption if you want to show on status reply.",
       "required": false,
-      "value": "🂱 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐓𝐔𝐒 𝐒𝐄𝐄𝐍 𝐀𝐍𝐃 𝐋𝐈𝐊𝐄 𝐉𝐔𝐒𝐓 𝐍𝐎𝐖 𝐖𝐈𝐀 𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃 🂱"
+      "value": "🂱 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐓𝐔𝐒 𝐒𝐄𝐄𝐍 𝐀𝐍𝐃 𝐋𝐈𝐊𝐄 𝐉𝐔𝐒𝐓 𝐍𝐎𝐖 BY ✭𝙺𝙴𝚁𝙼 𝙼𝙳✭ 🂱"
     },
     
     "AUTO_REPLY_STATUS": {
@@ -131,62 +131,62 @@
 
     "ALWAYS_ONLINE": {
       "description": "make it true if you want to show always online.",
-      "required": true,
+      "required": false,
       "value": "true"
     }, 
     
     "FAKE_TYPING": {
       "description": "make it true if you want to show fake typing.",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     }, 
     
     "CURRENT_STATUS": {
       "description": "make it true if you to show your reail last seen.",
-      "required": true,
+      "required": false,
       "value": "false"
     }, 
     
     "READ_CMD": {
       "description": "make it true if you want bot auto read commands",
-      "required": true,
+      "required": false,
       "value": "true"
     }, 
     
     "STATUS_REACT": {
       "description": "make it true if you want to show on status react.",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     },
 
     "OWNER_NUMBER": {
       "description": "replace it with your own number.",
       "required": false,
-      "value": "923096287432"
+      "value": "237659535227"
     }, 
 
     "OWNER_NAME": {
       "description": "replace it with your own name.",
       "required": false,
-      "value": "❖︵SILΞИΓ☠LФVΞЯ🤍࿐"
+      "value": "ᶜᴿᴬᶻᵞ𝙺𝙴𝚁𝙼 𝚃𝙴𝙲𝙷✖‿✖•"
       
      },
 
     "INBOX_BLOCK": {
       "description": "make it true if you sure you want to block inbox user.",
-      "required": true,
+      "required": false,
       "value": "false"
    }, 
 
     "ANTI_CALL": {
       "description": "Make it true if you want bot automatically decline your call.",
-      "required": true,
+      "required": false,
       "value": "false"
     },
     
     "AUTO_DOWNLOADING": {
       "description": "Make it true if you want bot auto Download media from link.",
-      "required": true,
+      "required": false,
       "value": "true"
     } 
     
