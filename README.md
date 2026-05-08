@@ -10,18 +10,6 @@
 
 -----------
 
-![Image](https://files.catbox.moe/s1kz4t.jpg)
-
------------
-
-<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
-
------------
-
-**`♦️❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀♦️`**
-
------------
-
 ### <br>  ❖ 𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃 ❖
 **`USE THIS LINK 🔗 FOR OTHER 🍽️ PLATFORMS TO DEPLOY DARK-SILENCE-MD 🩶`**
 
