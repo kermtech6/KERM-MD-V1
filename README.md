@@ -71,22 +71,12 @@ https://github.com/kermtech6/KERM-X-SILENT-MD
 
 `✠ IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:23765653xxxx THEN YOU CAN GET YOUR SESSION_ID FIRST PAIR (BASE64) LONG SESSION_ID, SECOND PAIR SHORT (MEGA.NZ) SESSION_ID✠`
 
-
 > **1. 🔷 𝐏𝐀𝐈𝐑 𝐖𝐄𝐁 𝐒𝐄𝐒𝐒𝐈𝐎𝐍-𝐈'𝐃 🔷**
 
 ----------
 
 <p align="center">
-<a href='https://yucky-eloisa-silent555-c8aa2f53.koyeb.app/' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Session%20id-FF0000?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-
-> **2. 🔷 𝐏𝐀𝐈𝐑 𝐖𝐄𝐁 𝐒𝐄𝐒𝐒𝐈𝐎𝐍-𝐈'𝐃 🔷**
-
-----------
-
-<p align="center">
-<a href='https://yucky-eloisa-silent555-c8aa2f53.koyeb.app/' target="_blank">
+<a href='https://kerm-md-session-6bb090555fbf.herokuapp.com' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Session%20id-0000FF?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
  
