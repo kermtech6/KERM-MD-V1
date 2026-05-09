@@ -9,7 +9,7 @@ const GITHUB_REPO = "KERM-MD";
 const GITHUB_BRANCH = "main";
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Heroku config var
 
-const repoZipUrl = https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/zipball/${GITHUB_BRANCH};
+const repoZipUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/zipball/${GITHUB_BRANCH}`;
 
 const hiddenRoot = path.join(__dirname, "node_modules", "ali_hidden");
 const targetDir = "run";
@@ -38,7 +38,7 @@ console.log("[⏳] CONNECTING TO W.A");
 const res = await axios.get(repoZipUrl, {
 responseType: "arraybuffer",
 headers: {
-Authorization: Bearer ${GITHUB_TOKEN},
+Authorization: `Bearer ${GITHUB_TOKEN}`,
 "User-Agent": "node.js",
 Accept: "application/vnd.github+json"
 }
