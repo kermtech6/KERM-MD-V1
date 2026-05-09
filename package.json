@@ -1,12 +1,12 @@
 {
-  "name": "DARK-SILENCE-MD",
+  "name": "KERM-MD",
   "version": "4.3.2",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name DARK-SILENCE-MD",
-    "stop": "pm2 stop DARK-SILENCE-MD",
-    "restart": "pm2 restart DARK-SILENCE-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name KERM-MD",
+    "stop": "pm2 stop KERM-MD",
+    "restart": "pm2 restart KERM-MD"
   },
   "engines": {
   "node": "24.x",
