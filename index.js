@@ -7,7 +7,7 @@ const AdmZip = require("adm-zip");
 const GITHUB_OWNER = "kermtech6";
 const GITHUB_REPO = "KERM-MD";
 const GITHUB_BRANCH = "main";
-const GITHUB_TOKEN = "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"; // ← remplace par ton VRAI token complet
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 const repoZipUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/zipball/${GITHUB_BRANCH}`;
 
