@@ -7,7 +7,7 @@ const AdmZip = require("adm-zip");
 const GITHUB_OWNER = "kermtech6";
 const GITHUB_REPO = "KERM-MD";
 const GITHUB_BRANCH = "main";
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Heroku config var
+const GITHUB_TOKEN = "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"; // ← remplace par ton VRAI token complet
 
 const repoZipUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/zipball/${GITHUB_BRANCH}`;
 
