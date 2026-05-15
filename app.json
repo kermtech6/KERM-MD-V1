@@ -1,7 +1,7 @@
 {
   "bot-name": "KERM-MD",
   "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY LORD KERM♥️",
-  "logo": "https://i.ibb.co/HfmVLW4W/Rx-Yg-PZMj-WC.jpg",
+  "logo": "https://iili.io/BpC2NJj.jpg",
   "keywords": ["KERM","bot"],
   "success_url": "/",
   "env": {
@@ -14,7 +14,7 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": true,
-      "value": "https://files.catbox.moe/s1kz4t.jpg"
+      "value": "https://iili.io/BpC2NJj.jpg"
       
     }, 
     
