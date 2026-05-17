@@ -1,12 +1,14 @@
 {
-  "bot-name": "KERM-MD",
-  "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY LORD KERM♥️",
+  "name": "KERM-MD-V1",
+  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Kɢ ᴛᴇᴄʜ",
   "logo": "https://iili.io/BpC2NJj.jpg",
-  "keywords": ["KERM","bot"],
+  "keywords": ["bot"],
   "success_url": "/",
+
+    "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Put the session-id here. Starting with KERM-MD~",
+      "description": "Put the session-id here.",
       "required": true,
       "value": ""
     },  
@@ -15,46 +17,42 @@
       "description": "paste your image url if you don't have you can use this public url.",
       "required": true,
       "value": "https://iili.io/BpC2NJj.jpg"
-      
     }, 
     
     "ALIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": true,
-      "value": "HI DEAR USER KERM-MD ALIVE NOW POWERED BY LORD KERM 🤍💫💨"
-    
+      "value": "_Hi bro am alive now🥷🏽🤝🏾._"
     },
     
     "PREFIX": {
-      "description": "paste your bot prefix note! Don't apply null prefix.",
+      "description": "paste your bot prefix note! Don't apply null please prefix.",
       "required": true,
       "value": "."
-    
     },
     
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
       "required": true,
       "value": "public"
-    
     }, 
 
     "AUTO_VOICE": {
       "description": "Make it true if you want bot auto voice.",
       "required": true,
-      "value": "false"
+      "value": "true"
     }, 
 
     "AUTO_REPLY": {
       "description": "Make it true if you want bot auto reply.",
       "required": true,
-      "value": "false"
+      "value": "true"
     }, 
 
     "AUTO_STICKER": {
       "description": "Make it true if you want bot auto sticker.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_READ_STATUS": {
@@ -66,7 +64,7 @@
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
-      "value": "false"
+      "value": "true"
     },
 
     "ANTI_BAD": {
@@ -75,124 +73,40 @@
       "value": "false"
     }, 
 
-    "ANTI_DEL_PATH": {
-      "description": "type here log if you want detected antidelete in conn.id.",
-      "required": false,
-      "value": "same"
-    }, 
-
     "FAKE_RECORDING": {
       "description": "Make it true if you want bot fake record.",
       "required": true,
-      "value": "false"
+      "value": "true"
     },
 
     "AUTO_REACT": {
       "description": "Make it true if you want bot AutoReact.",
-      "required": true,
+      "required": false,
       "value": "false"
+    },
+
+    "OWNER_REACT": {
+      "description": "Make it true if you want bot OwnerReact.",
+      "required": false,
+      "value": "false"
+    
     }, 
 
     "BOT_NAME": {
       "description": "write hear your name.",
       "required": true,
-      "value": "✭𝙺𝙴𝚁𝙼 𝙼𝙳✭"
+      "value": "✦『𝗞𝗘𝗥𝗠 𝗠𝗗 𝗩1』✦"
     }, 
 
     "HEART_REACT": {
       "description": "Make it true if you want bot only heart ♥️ emjois reaction .",
       "required": true,
       "value": "false"
-    }, 
+    }
 
-    "READ_MESSAGE": {
-      "description": "Make it true if you want bot read your all sms just now.",
-      "required": true,
-      "value": "false"
-    }, 
-    
-    "CAPTION": {
-      "description": "enter your caption if you want to show on menu.",
-      "required": true,
-      "value": "POWERED BY TECH•KERM🤍💨"
-    }, 
-    
-    "STATUS_REPLY": {
-      "description": "enter your caption if you want to show on status reply.",
-      "required": false,
-      "value": "🂱 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐓𝐔𝐒 𝐒𝐄𝐄𝐍 𝐀𝐍𝐃 𝐋𝐈𝐊𝐄 𝐉𝐔𝐒𝐓 𝐍𝐎𝐖 BY ✭𝙺𝙴𝚁𝙼 𝙼𝙳✭ 🂱"
-    },
-    
-    "AUTO_REPLY_STATUS": {
-      "description": "you can true or false it.",
-      "required": true,
-      "value": "false"
-    }, 
+},
 
-    "ALWAYS_ONLINE": {
-      "description": "make it true if you want to show always online.",
-      "required": false,
-      "value": "true"
-    }, 
-    
-    "FAKE_TYPING": {
-      "description": "make it true if you want to show fake typing.",
-      "required": false,
-      "value": "false"
-    }, 
-    
-    "CURRENT_STATUS": {
-      "description": "make it true if you to show your reail last seen.",
-      "required": false,
-      "value": "false"
-    }, 
-    
-    "READ_CMD": {
-      "description": "make it true if you want bot auto read commands",
-      "required": false,
-      "value": "true"
-    }, 
-    
-    "STATUS_REACT": {
-      "description": "make it true if you want to show on status react.",
-      "required": false,
-      "value": "false"
-    },
-
-    "OWNER_NUMBER": {
-      "description": "replace it with your own number.",
-      "required": false,
-      "value": "237659535227"
-    }, 
-
-    "OWNER_NAME": {
-      "description": "replace it with your own name.",
-      "required": false,
-      "value": "ᶜᴿᴬᶻᵞ𝙺𝙴𝚁𝙼 𝚃𝙴𝙲𝙷✖‿✖•"
-      
-     },
-
-    "INBOX_BLOCK": {
-      "description": "make it true if you sure you want to block inbox user.",
-      "required": false,
-      "value": "false"
-   }, 
-
-    "ANTI_CALL": {
-      "description": "Make it true if you want bot automatically decline your call.",
-      "required": false,
-      "value": "false"
-    },
-    
-    "AUTO_DOWNLOADING": {
-      "description": "Make it true if you want bot auto Download media from link.",
-      "required": false,
-      "value": "true"
-    } 
-    
-  },
-  
-  "buildpacks": [
+     "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
