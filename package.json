@@ -10,7 +10,7 @@
     "restart": "echo 'Restart is handled Gracefully'"
 },
   "dependencies": {
-    "@whiskeysockets/baileys": "6.7.19",
+    "@whiskeysockets/baileys": "github:Mayelprince/Prince-bailey",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
