@@ -36,7 +36,7 @@
     "path": "^0.12.7",
     "moment-timezone": "^0.5.43",
     "node-fetch": "^2.6.1",
-    "node-cache" : "5.1.2",
+    "node-cache" : "^5.1.2",
     "btch-downloader": "^2.2.9",
     "megajs": "^1.1.0",
     "pg-hstore": "^2.3.4",
