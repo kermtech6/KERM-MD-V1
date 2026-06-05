@@ -41,6 +41,7 @@
     "megajs": "^1.1.0",
     "pg-hstore": "^2.3.4",
     "pg": "^8.11.3",
+    "node-html-to-image": "^5.0.0",
     "pdfkit": "^0.14.0",
     "wa_set_pkg": "1.0.5",
     "wa-sticker-formatter": "^4.4.4",
