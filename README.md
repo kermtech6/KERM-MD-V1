@@ -76,7 +76,7 @@ https://github.com/kermtech6/KERM-MD-V1
 ----------
 
 <p align="center">
-<a href='https://kerm-md-v1-session-592e1b4b3c9e.herokuapp.com' target="_blank">
+<a href='https://kerm-sessions-production.up.railway.app' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Session%20id-0000FF?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
  
