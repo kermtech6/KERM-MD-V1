@@ -3,7 +3,7 @@
   "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Kɢ ᴛᴇᴄʜ🇨🇲",
   "logo": "https://iili.io/BpC2NJj.jpg",
   "keywords": ["bot", "kerm-md", "kermtech"],
-  "documentation-link": "https://kerm-md-v1-session-592e1b4b3c9e.herokuapp.com",
+  "documentation-link": "https://kerm-sessions-production.up.railway.app",
   "success_url": "/",
   "env": {
     "SESSION_ID": {
