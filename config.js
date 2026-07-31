@@ -46,10 +46,9 @@ AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
 STATUS_REPLY: process.env.STATUS_REPLY || "SEEN BY KERM MD V1🥷🏼",
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 READ_CMD: process.env.READ_CMD || "true",
-ANTI_DELETE: process.env.ANTI_DELETE || "false",
-ANTI_DELETE_TO_OWNER: process.env.ANTI_DELETE_TO_OWNER || "false",
+ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "log", // "log" = envoie en DM owner, sinon renvoie dans le chat d'origine
 ANTI_CALL: process.env.ANTI_CALL || "false",
 ANTI_SPAM: process.env.ANTI_SPAM || "false",
 AUTO_DOWNLOAD: process.env.AUTO_DOWNLOAD || "false",
-OWNER_NUMBER: process.env.OWNER_NUMBER || "237659535227",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "",
 };
