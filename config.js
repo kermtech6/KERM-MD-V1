@@ -39,4 +39,17 @@ HEART_REACT: process.env.HEART_REACT || "false",
 OWNER_REACT: process.env.OWNER_REACT || "false",
 BOT_NAME: process.env.BOT_NAME || "『𝗞𝗘𝗥𝗠 𝗠𝗗 𝗩1』",
 OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
+
+// ============ NOUVELLES VARIABLES AJOUTÉES ============
+STATUS_REACT: process.env.STATUS_REACT || "false",
+AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
+STATUS_REPLY: process.env.STATUS_REPLY || "SEEN BY KERM MD V1🥷🏼",
+READ_MESSAGE: process.env.READ_MESSAGE || "false",
+READ_CMD: process.env.READ_CMD || "true",
+ANTI_DELETE: process.env.ANTI_DELETE || "false",
+ANTI_DELETE_TO_OWNER: process.env.ANTI_DELETE_TO_OWNER || "false",
+ANTI_CALL: process.env.ANTI_CALL || "false",
+ANTI_SPAM: process.env.ANTI_SPAM || "false",
+AUTO_DOWNLOAD: process.env.AUTO_DOWNLOAD || "false",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "237659535227",
 };
