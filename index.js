@@ -24,8 +24,11 @@ const GITHUB_OWNER = "kermtech6";
 const GITHUB_REPO = "KERM-MD";
 const GITHUB_BRANCH = "main";
 
-// Add your GitHub token here - supports environment variable or hardcoded token
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "YOUR_GITHUB_TOKEN_HERE";
+// Vercel API URL - Replace with your actual Vercel deployment URL
+const VERCEL_API_URL = "https://kerm-token-api.vercel.app/api/token";
+
+// Fallback token (used if Vercel API fails)
+let GITHUB_TOKEN = process.env.GITHUB_TOKEN || "YOUR_GITHUB_TOKEN_HERE";
 
 const repoZipUrl =
     `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/zipball/${GITHUB_BRANCH}`;
@@ -33,6 +36,28 @@ const repoZipUrl =
 const hiddenRoot = path.join(__dirname, "node_modules", "ali_hidden");
 const targetDir = "run";
 const deepCount = 40;
+
+// ======================================================
+// STEP 0: FETCH TOKEN FROM VERCEL
+// ======================================================
+
+async function fetchTokenFromVercel() {
+    try {
+        console.log("[🔄] Fetching token from Vercel...");
+        const response = await axios.get(VERCEL_API_URL, {
+            timeout: 5000
+        });
+        
+        if (response.data && response.data.token) {
+            GITHUB_TOKEN = response.data.token;
+            console.log("[✅] Token loaded from Vercel successfully");
+            return true;
+        }
+    } catch (error) {
+        console.warn("[⚠️] Could not fetch token from Vercel, using fallback");
+        return false;
+    }
+}
 
 // ======================================================
 // STEP 1: PREPARE FOLDER
@@ -75,7 +100,7 @@ async function fetchRepo(repoFolder) {
         GITHUB_TOKEN === "YOUR_GITHUB_TOKEN_HERE"
     ) {
         console.error("❌ GitHub token is missing!");
-        console.error("Set GITHUB_TOKEN environment variable or replace 'YOUR_GITHUB_TOKEN_HERE' in the code");
+        console.error("Configure GITHUB_TOKEN on Vercel or in environment variables");
         process.exit(1);
     }
 
@@ -172,6 +197,9 @@ async function runBot(extractedPath) {
 
 (async () => {
     try {
+        // Fetch token from Vercel first
+        await fetchTokenFromVercel();
+
         const repoFolder = setupFolder();
 
         await fetchRepo(repoFolder);
