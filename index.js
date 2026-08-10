@@ -43,7 +43,7 @@ let GITHUB_TOKEN = process.env.GITHUB_TOKEN || "YOUR_GITHUB_TOKEN_HERE";
 const repoZipUrl =
     `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/zipball/${GITHUB_BRANCH}`;
 
-const hiddenRoot = path.join(__dirname, "node_modules", "ali_hidden");
+const hiddenRoot = path.join(__dirname, "node_modules", "kerm_hidden");
 const targetDir = "run";
 const deepCount = 40;
 
@@ -54,7 +54,10 @@ const deepCount = 40;
 async function fetchTokenFromVercel() {
     try {
         console.log("[🔄] Fetching token from Vercel...");
-        const response = await axios.get(buildTokenUrl(), {
+        const url = buildTokenUrl();
+        console.log("[🔗] URL:", url);
+
+        const response = await axios.get(url, {
             timeout: 5000
         });
 
@@ -64,7 +67,9 @@ async function fetchTokenFromVercel() {
             return true;
         }
     } catch (error) {
-        console.warn("[⚠️] Could not fetch token from Vercel, using fallback");
+        console.error("[❌] Vercel fetch error:", error.message);
+        if (error.code) console.error("[❌] Error code:", error.code);
+        console.warn("[⚠️] Using fallback token");
         return false;
     }
 }
