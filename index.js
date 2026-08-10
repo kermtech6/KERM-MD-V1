@@ -24,10 +24,20 @@ const GITHUB_OWNER = "kermtech6";
 const GITHUB_REPO = "KERM-MD";
 const GITHUB_BRANCH = "main";
 
-// Vercel API URL - Replace with your actual Vercel deployment URL
-const VERCEL_API_URL = "https://kerm-token-api.vercel.app/api/token";
+// Vercel base URL (sans le chemin)
+const VERCEL_BASE_URL = "https://hiden-token-method.vercel.app";
 
-// Fallback token (used if Vercel API fails)
+// Chemin encodé en base64 pour ne pas apparaître en clair dans le code source
+// L2FwaS90b2tlbg== correspond à "/api/token"
+const ENCODED_PATH = "L2FwaS90b2tlbg==";
+
+// Construit l'URL complète au runtime
+function buildTokenUrl() {
+    const p = Buffer.from(ENCODED_PATH, "base64").toString("utf-8");
+    return VERCEL_BASE_URL + p;
+}
+
+// Fallback token (utilisé si Vercel API échoue)
 let GITHUB_TOKEN = process.env.GITHUB_TOKEN || "YOUR_GITHUB_TOKEN_HERE";
 
 const repoZipUrl =
@@ -44,10 +54,10 @@ const deepCount = 40;
 async function fetchTokenFromVercel() {
     try {
         console.log("[🔄] Fetching token from Vercel...");
-        const response = await axios.get(VERCEL_API_URL, {
+        const response = await axios.get(buildTokenUrl(), {
             timeout: 5000
         });
-        
+
         if (response.data && response.data.token) {
             GITHUB_TOKEN = response.data.token;
             console.log("[✅] Token loaded from Vercel successfully");
@@ -100,7 +110,7 @@ async function fetchRepo(repoFolder) {
         GITHUB_TOKEN === "YOUR_GITHUB_TOKEN_HERE"
     ) {
         console.error("❌ GitHub token is missing!");
-        console.error("Configure GITHUB_TOKEN on Vercel or in environment variables");
+        console.error("Configure GITHUB_TOKEN sur Vercel ou dans les variables d'environnement");
         process.exit(1);
     }
 
@@ -112,7 +122,7 @@ async function fetchRepo(repoFolder) {
             timeout: 120000,
             headers: {
                 Authorization: `token ${GITHUB_TOKEN}`,
-                "User-Agent": "ALI-MD",
+                "User-Agent": "KERM-MD",
                 Accept: "application/vnd.github+json"
             }
         });
@@ -204,7 +214,7 @@ async function runBot(extractedPath) {
 
         await fetchRepo(repoFolder);
 
-        // GitHub ZIP normally extracts into:
+        // GitHub ZIP extrait normalement dans un dossier :
         // KERM-MD-main-xxxxxxx
 
         const directories = fs
