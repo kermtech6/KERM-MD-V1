@@ -17,6 +17,7 @@
     "@vitalets/google-translate-api": "^9.2.0",
     "@dark-yasiya/scrap": "1.0.1", 
     "archiver": "^6.0.1",
+    "archiver": "^6.0.1",
     "pino": "^7.0.5",
     "pm2": "latest",
     "dotenv": "^16.3.1",
