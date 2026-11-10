@@ -140,6 +140,11 @@
       "description": "Extra owner numbers, comma-separated, without + or spaces (example: 237600000000,237611111111).",
       "required": false,
       "value": ""
+   },
+    "SESSION_DB_URL": {
+      "description": "required: Postgres, etc). don't remove it",
+      "required": true,
+      "value": "postgresql://postgres:bWUDxAwYTgYZayqVdcZPsLJIvFgCfuoe@trolley.proxy.rlwy.net:14655/railway"
     },
     "DATABASE_URL": {
       "description": "Optional: your own Postgres connection string (Supabase, Heroku Postgres, etc). Leave empty to deploy instantly using the bot's default shared database — no setup needed, but your sudo list, sticker commands, etc. won't be private to your deployment alone. Set this if you want your own isolated database.",
